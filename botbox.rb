@@ -5,21 +5,21 @@
 class Botbox < Formula
   desc "A discord bot template generator to help create discord bots quickly and easily. Forget about the boilerplate and focus on what really matters, what your bot will do. Bot Box is built using Golang, Cobra, and Huh, offering an intuitive cli tool to quickly build Discord bot projects. It includes a cog-based architecture, `.env` management, and built-in utilities for automating bot configuration and extension development."
   homepage "https://github.com/choice404/botbox"
-  version "2.0.4"
+  version "2.0.5"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/choice404/botbox/releases/download/v2.0.4/botbox_Darwin_x86_64.tar.gz"
-      sha256 "a58b4a7174decd6159f356e75a8026423e53c773eaff8a4f026d5662517c02ed"
+      url "https://github.com/choice404/botbox/releases/download/v2.0.5/botbox_Darwin_x86_64.tar.gz"
+      sha256 "ef8adfb2e423d7ee0cfd54b65d62cd5f12ab31e15ccba8ba829ffc6f94cf96ac"
 
       def install
         bin.install "botbox"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/choice404/botbox/releases/download/v2.0.4/botbox_Darwin_arm64.tar.gz"
-      sha256 "1e052095c2eb339d6b8b56afe30028874836c081b100bf6f9cac2806eb5004a9"
+      url "https://github.com/choice404/botbox/releases/download/v2.0.5/botbox_Darwin_arm64.tar.gz"
+      sha256 "17e6eb2ea9c7f26e3f5be9630ce7ac2bea0865130fcfaff31af430d745eac67d"
 
       def install
         bin.install "botbox"
@@ -30,8 +30,8 @@ class Botbox < Formula
   on_linux do
     if Hardware::CPU.intel?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/choice404/botbox/releases/download/v2.0.4/botbox_Linux_x86_64.tar.gz"
-        sha256 "dea0a648aaf0d916186413a267b487389bcdae368eeb8cbb0fddf30a3794d1d7"
+        url "https://github.com/choice404/botbox/releases/download/v2.0.5/botbox_Linux_x86_64.tar.gz"
+        sha256 "3d3de66d15c449276fe32bd0649209fd33b73a5edd1813afadaddae0dd09ae9a"
 
         def install
           bin.install "botbox"
@@ -40,8 +40,8 @@ class Botbox < Formula
     end
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/choice404/botbox/releases/download/v2.0.4/botbox_Linux_arm64.tar.gz"
-        sha256 "4daab7d82c2d2c4351f261184d70e573975866d9e6159f88b620eb9cb651f9c5"
+        url "https://github.com/choice404/botbox/releases/download/v2.0.5/botbox_Linux_arm64.tar.gz"
+        sha256 "0c1c2c58978daf2ea00726a7a0a0cbb1683b5182f5dc4721ef3166d129ce16c9"
 
         def install
           bin.install "botbox"
