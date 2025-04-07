@@ -11,7 +11,7 @@ class Botbox < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/choice404/botbox/releases/download/v2.2.2/botbox_Darwin_x86_64.tar.gz"
-      sha256 "8f39abe25d521954a769abcaf9ef20905a61d06f9e6d0369dfedbbf046ce1e3b"
+      sha256 "600132b1c15f23fa60663c2313c095b2720a694245b36a569f614e992bd0ac15"
 
       def install
         bin.install "botbox"
@@ -19,7 +19,7 @@ class Botbox < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/choice404/botbox/releases/download/v2.2.2/botbox_Darwin_arm64.tar.gz"
-      sha256 "e82de15f47bc4ae261de7e0acbb59fd8f1e625212b2716d3424f2a5f28ed461f"
+      sha256 "9a0966bc1d96bc3d2e7322f187cfead1e5dc53033a9df7d097f9080744ff8cbf"
 
       def install
         bin.install "botbox"
@@ -31,7 +31,7 @@ class Botbox < Formula
     if Hardware::CPU.intel?
       if Hardware::CPU.is_64_bit?
         url "https://github.com/choice404/botbox/releases/download/v2.2.2/botbox_Linux_x86_64.tar.gz"
-        sha256 "c628fa01968a0be88fe27d13e4a33f7887439769535d9474cacd45c99ee5af05"
+        sha256 "48bba67df7b3906b2411ae4f32fad1549c34c8c2fcd36ffc7b59ff2d0a2e84aa"
 
         def install
           bin.install "botbox"
@@ -41,7 +41,7 @@ class Botbox < Formula
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
         url "https://github.com/choice404/botbox/releases/download/v2.2.2/botbox_Linux_arm64.tar.gz"
-        sha256 "e9274916ff7cc9f257bb52659c767c2a799b07e91aa300f9a9341afd9d983671"
+        sha256 "edf4ca508ee04b0c0c8c38736f7395266c4299ed64beb3137cf74a9ecab52fce"
 
         def install
           bin.install "botbox"
